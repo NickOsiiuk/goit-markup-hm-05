@@ -30,7 +30,9 @@
           <!-- navigation link -->
           <ul class="list nav-list">
             <li class="nav-list-item">
-              <a class="link nav-list-link" href="./index.html">Studio</a>
+              <a class="link nav-list-link current" href="./index.html"
+                >Studio</a
+              >
             </li>
             <li class="nav-list-item">
               <a class="link nav-list-link" href="./portfolio.html">
@@ -66,7 +68,9 @@
       <section class="hero overlay">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="btn hero-button" type="button">Order Service</button>
+          <button class="btn hero-button" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -550,7 +554,7 @@
           <li>
             <a
               class="social-link-footer"
-              href=""
+              href="https://www.google.com/"
               aria-label="instagram"
               target="_blank"
               rel="noopener norefferer"
@@ -562,7 +566,7 @@
           <li>
             <a
               class="social-link-footer"
-              href=""
+              href="https://www.google.com/"
               aria-label="twitter"
               target="_blank"
               rel="noopener norefferer"
@@ -574,7 +578,7 @@
           <li>
             <a
               class="social-link-footer"
-              href=""
+              href="https://www.google.com/"
               aria-label="facebook"
               target="_blank"
               rel="noopener norefferer"
@@ -586,7 +590,7 @@
           <li>
             <a
               class="social-link-footer"
-              href=""
+              href="https://www.google.com/"
               aria-label="linkedin"
               target="_blank"
               rel="noopener norefferer"
@@ -598,5 +602,17 @@
         </ul>
       </div>
     </footer>
+
+    <!-- modal window -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="button modal-btn" type="button" data-modal-close>
+          <svg class="modal-icon" width="8px" height="8px">
+            <use href="./images/icons/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
