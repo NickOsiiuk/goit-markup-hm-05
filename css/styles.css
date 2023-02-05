@@ -683,14 +683,29 @@ img {
   height: 24px;
   border-radius: 50%;
   cursor: pointer;
-  background: #e7e9fc;
+  background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
+
+  transition-property: background-color, border, color, fill;
+  transition-duration: var(--anim-duration);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+
 }
 
-.modal-icon {
+.modal-btn:hover, .modal-btn:focus {
+  background-color: #404BBF;
+  border: 4px;
+  color: #ffffff;
+}
+
+.modal-icon{
   fill: black;
 }
-.modal-icom:hover,
-.modal-icon:focus {
-  fill: var(--accent);
+
+.modal-btn:hover .modal-icon, .modal-btn:focus .modal-icon {
+  fill: white;
 }
+
+
